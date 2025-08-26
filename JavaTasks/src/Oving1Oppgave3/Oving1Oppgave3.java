@@ -32,12 +32,12 @@ public class Oving1Oppgave3 {
         }
 
         // Takes user input to convert into a HH:MM:SS format.
-        Scanner inputReader = new Scanner(System.in);
+        Scanner inputScanner = new Scanner(System.in);
         System.out.print("Write the amount of seconds you want to convert into the HH:MM:SS format: ");
         boolean run = true;
         while(run){
             try{
-                Double inputDouble = Double.parseDouble(inputReader.next());
+                Double inputDouble = Double.parseDouble(inputScanner.next());
                 Double seconds = inputDouble;
                 Double hours = Math.floor(seconds / Math.pow(60, 2));
                 seconds %= Math.pow(60, 2);
@@ -49,7 +49,7 @@ public class Oving1Oppgave3 {
                 System.out.println("Please write a valid number.");
             }
         }
-        
+        inputScanner.close();
     }
 
     public static Map<String, List<Double>> readerCSVFormater(BufferedReader reader) throws IOException {
