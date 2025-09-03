@@ -9,5 +9,4 @@ public class Product {
         price = nok;
         name = n;
     }
-    
 }
