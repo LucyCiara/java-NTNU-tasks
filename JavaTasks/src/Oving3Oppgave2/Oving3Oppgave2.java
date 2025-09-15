@@ -2,7 +2,7 @@ package Oving3Oppgave2;
 
 import java.util.Scanner;
 
-public class Oving3Oppgave1 {
+public class Oving3Oppgave2 {
     public static void main(String[] args) throws Exception{
         Scanner inputScanner = new Scanner(System.in);
         boolean run = true;
