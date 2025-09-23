@@ -33,7 +33,7 @@ public class Fraction {
     }
 
     // Operations
-    private int[] simplify(int num, int denom){
+    public int[] simplify(int num, int denom){
         int i = 2;
         while(i <= Math.abs(num) && i <= Math.abs(denom)){
             if(num%i==0 && denom%i==0){
