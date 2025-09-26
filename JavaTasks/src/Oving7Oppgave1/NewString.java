@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 
 final class NewString{
-    public String value;
+    public final String value;
 
     // Constructor and toString.
     public NewString(String value){
