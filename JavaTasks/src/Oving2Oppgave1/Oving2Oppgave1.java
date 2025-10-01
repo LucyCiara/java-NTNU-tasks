@@ -25,6 +25,7 @@ public class Oving2Oppgave1{
         }else{
             System.out.printf("The year %d is NOT a leap year%n", inputYear);
         }
+        inputScanner.close();
     }
 
 }

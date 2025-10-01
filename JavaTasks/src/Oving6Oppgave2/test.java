@@ -1,8 +1,6 @@
 package Oving6Oppgave2;
 
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.Map;
 
 public class test {

@@ -1,7 +1,6 @@
 package Oving7Oppgave2;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class test {
     public static void main(String[] args) {

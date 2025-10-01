@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class TaskOverview {
     private ArrayList<Student> Students = new ArrayList<Student>();
-    private int studentNumber;
+    private int studentNumber = 0;
 
     // Constructors and toString methods
     public TaskOverview(){
@@ -17,6 +17,7 @@ public class TaskOverview {
         this(new ArrayList<Student>(Arrays.asList(students)));
     }
     public TaskOverview(ArrayList<Student> students){
+        this.studentNumber = students.size();
         this.Students = students;
     }
     @Override
@@ -40,7 +41,7 @@ public class TaskOverview {
 
     // Get methods
     public int getNumberOfStudents(){
-        return this.Students.size();
+        return this.studentNumber;
     }
     public int getStudentTaskCompletion(String name){
         return this.getStudent(name).getTaskCompletion();
@@ -49,6 +50,7 @@ public class TaskOverview {
     // Other public methods
     public void addStudent(Student student){
         this.Students.add(student);
+        this.studentNumber++;
     }
     public void incrementStudentTaskCompletion(String name, int increase){
         this.getStudent(name).incrementTaskCompletion(increase);

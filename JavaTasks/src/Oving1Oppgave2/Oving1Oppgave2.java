@@ -5,7 +5,6 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 import com.opencsv.CSVReader;
 // import java.util.ArrayList;
-import java.util.List;
 
 class Oving1Oppgave2 {
     public static void main(String[] args) throws Exception {
@@ -17,5 +16,6 @@ class Oving1Oppgave2 {
         // List<String[]> times = csvTimeReader.readAll();
         // System.out.println(times);
         // csvTimeReader.close();
+        csvTimeReader.close();
     }
 }

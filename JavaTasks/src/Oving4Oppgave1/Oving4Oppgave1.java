@@ -1,7 +1,6 @@
 package Oving4Oppgave1;
 import java.util.Scanner;
 
-import Oving4Oppgave1.Valuta;
 
 public class Oving4Oppgave1 {
     public static void main(String[] args) throws Exception{

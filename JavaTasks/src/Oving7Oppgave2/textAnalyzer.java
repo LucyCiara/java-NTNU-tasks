@@ -1,13 +1,6 @@
 package Oving7Oppgave2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
-import org.apache.commons.lang3.StringUtils;
-
-import com.opencsv.bean.processor.StringProcessor;
 
 public class textAnalyzer {
     // Object Variables
@@ -94,9 +87,7 @@ public class textAnalyzer {
     public float avgSentenceWordLength(){
         int totalLength = 0;
         for(String[] sl : this.sentenceArray){
-            for(String s : sl){
-                totalLength += 1;
-            }
+            totalLength += sl.length;
         }
         return (float) totalLength/(this.sentenceArray.length);
     }

@@ -1,6 +1,5 @@
 package Oving7Oppgave1;
 
-import java.util.ArrayList;
 
 
 final class NewString{
